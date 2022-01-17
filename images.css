@@ -1,0 +1,33 @@
+#selfpicture{
+    float: right;
+    width: 12em;
+    height: 15em;
+    margin: 1em 2em 2em 2em;
+    border: 3px solid black;
+}
+
+#ravens-logo{
+    float: left;
+    padding-right: 10px;
+    height: 10em;
+}
+
+#ACR{
+    border: 2px solid black;
+    width: 30em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+#ACR1{
+    border: 2px solid black;
+    width: 30em;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
+}
