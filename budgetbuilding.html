@@ -162,7 +162,30 @@
             <span onclick="this.parentElement.style.display='none'" 
             class="closeoutTopRight">X</span>
             <h3>Putting Everything Together</h3>
-
+            <p>
+                Now we have a perfectly fine layout, but much like a web page with HTML and 
+                no JavaScript, it doesn't really do much. Sure we can fill out the Funds 
+                Tracker for the whole month perfectly, but our Account Summary wouldn’t 
+                be altered and we would have no idea if we kept to our budget. 
+            </p>
+            <p>
+                To make this a working sheet, we need to add formulas to the Account 
+                Summary and Budget sections. On the face of it, you may think that 
+                since the Budget section has 8 categories and the Account Summary has 
+                3 sections that we will need to make 11 formulas. However, thanks to 
+                the power of computers we only need 3!
+            </p>
+            <p>
+                A quick note before we dive in, Google Sheets is cell-based for it’s 
+                formulas so if your sheet does not look exactly like the example then 
+                you may have to adjust your cell identifiers.
+            </p>
+            <h3>Formula for the Account Summary</h3>
+            <p>
+                For the account summary, we need a formula that can tell when we take 
+                money out or add money to an account based on the Funds Tracker to fill 
+                in the EOM column. I have added the below transactions to the Funds tracker.
+            </p>
         </div>
         <br>
         <hr>
