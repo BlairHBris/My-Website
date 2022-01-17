@@ -11,20 +11,20 @@ body{
 
 header{
     text-align: center;
-    max-width: 650px;
+    max-width: 51em;
 }
 
 nav>ul{
     list-style-type: none;
     display: inline;
-    max-width: 650px;
+    max-width: 51em;
 }
 
 nav>ul>li{
     display: inline;
     padding-left: 1em;
     padding-right: 1em;
-    max-width: 650px;
+    max-width: 51em;
 }
 
 nav>ul>li>a{
@@ -50,10 +50,15 @@ h3{
 }
 
 p,
-ol{
-    max-width: 650px;
+ol
+li{
+    max-width: 51em;
     font-size: 16px;
     line-height: 1.75;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    text-align: center;
 }
