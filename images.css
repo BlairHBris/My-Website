@@ -14,20 +14,20 @@
 
 #ACR{
     border: 2px solid black;
-    width: 20em;
+    width: 15em;
     height: 25em;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-bottom: 1em;
     margin-right: 1em;
-    float: left;
+    float: right;
 }
 
 #ACR1{
     border: 2px solid black;
-    width: 40em;
     height: 10em;
+    width: 15em;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -37,7 +37,7 @@
 
 #ACR2{
     border: 2px solid black;
-    width: 20em;
+    width: 15em;
     height: 20em;
     margin-left: auto;
     margin-right: auto;
