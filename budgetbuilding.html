@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Blair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images.css">
+    <link rel="stylesheet" href="tabs.css">
+    <script src="tabs.js"></script>
+    <link rel="icon" href="images/logo2.png">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logo2.png" height = 70 
+            alt="Logo for Blair Bristow">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">All About Me!</a></li>
+                <li><a href="budgetbuilding.html">Budget Building</a></li>
+                <li><a href="revisions.html">Revisions</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <br>
+        <h1>Blair Bristow</h1>
+        <h5>Die-Hard Ravens Fan, Budget Builder, and Aspiring 
+            Software Engineer</h5>
+        <hr>
+    </header>
+    
+    <main>
+        <h2>How to Build a Budget Sheet</h2>
+        <img id= "mainimage" src="images/budget.jfif" alt="Budgeting">
+        <img id= "dollarsign" src="images/dollarsign1.gif" alt="Money">
+        <p>
+            I love personal finance. I spend a lot of my evenings tracking the 
+            balances of the various accounts my wife and I have. I track deposits, 
+            withdrawals, growth, and depreciation. It’s calming to me. Having full 
+            knowledge of our personal finances gives me a great sense of control and 
+            stability and the best way for me to do that is to keep a budget and expense 
+            tracker for every month.
+        </p>
+        <p>
+            This may sound like a daunting task and indeed, tracking all this by 
+            hand would be an error filled, tedious, and frustrating mess. However, 
+            with the power of computers, and a little set up, this knowledge is 
+            easy to reach and, if you’re like me, so is the peace of mind that comes with it.
+        </p>
+        <br>
+        <p>
+            <img id="spreadsheet" src="images/spreadsheet.jfif" alt="spreadsheet">
+            The first step is picking your program of choice. I recommend and 
+            will be using Google Sheets for this walkthrough; its availability 
+            as an app and price of $0 are hard to beat. After you make this 
+            selection, you need to start thinking creatively. A budget may 
+            indeed be primarily made of numbers, but the presentation and 
+            structure of your sheet makes the difference between a useful tool 
+            and a listless thing that causes more pain than its worth.
+        </p>
+        <p>
+            So this begs the question, how do you create and structure a fully
+            functional budget sheet?
+            In my budget sheet there are 3 sections, The Account Tracker, The 
+            Budget, and The Expense List. Click on the tabs below to learn more!
+        </p>
+        <hr>
+
+        <h3>The Creation Process</h3>
+
+        <div class="tab">
+            <button class="tablinks" 
+            onclick="openSection(event, 'Account Summary')"
+            id="defaultTab">
+                Account Summary
+            </button>
+            <button class="tablinks" 
+            onclick="openSection(event,'Budget')">
+                Budget
+            </button>
+            <button class="tablinks" 
+            onclick="openSection(event,'Funds Tracker')">
+                Funds Tracker
+            </button>
+            <button class="tablinks" 
+            onclick="openSection(event,'Putting Everything Together')">
+                Putting Everything Together
+            </button>
+        </div>
+
+        <div id="Account Summary" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" 
+            class="closeoutTopRight">X</span>
+            <h3>The Account Summary</h3>
+            <img id="excel" src="images/accountsummary1.PNG" alt="First Account Summary Screen">
+            <p>
+                Your Account Summary should be formatted as a table with 4 columns, 
+                Account, BOM (Beginning of Month), EOM (End of Month), and Change. 
+                In this example we have 3 different accounts with some filler values 
+                for BOM and a formula in the Change column that subtracts EOM from BOM. 
+                I have also added a Total row at the bottom which is a SUM() formula for 
+                each column.
+            </p>
+            <p>
+                For now, BOM will remain empty. We will come back to this 
+                in a later tab. As you can see I also added light formatting by making 
+                all cells that contain numbers into dollar values which I will continue to do.
+            </p>
+        </div>
+
+        <div id="Budget" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" 
+            class="closeoutTopRight">X</span>
+            <h3>The Budget</h3>
+            <img id="excelbudget" src="images/budget1.PNG" alt="First Budget">
+            <p>
+                Your first step to making a budget is putting down the amount of money you 
+                expect to bring in each month. Whether this is consistent or not, I 
+                recommend starting with the amount brought in last month for ease of use.
+            </p>
+            <p>
+                Next, we will list out our expenses and their amounts. These amounts can 
+                either be fixed, such as monthly rent or mortgage, or they can be variable, 
+                like grocery spending. You can have as many or as few categories as you 
+                would like. I have 8 in this example as you can see on the right, but this 
+                guide will work no matter how many categories you have.
+            </p>
+            <ul>
+                <li>Tip: Enter your amount estimates as negative numbers so that your 
+                    remainder calculation is just a SUM() formula for the whole column.</li>
+            </ul>
+        </div>
+        
+        <div id="Funds Tracker" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" 
+            class="closeoutTopRight">X</span>
+            <h3>The Funds Tracker</h3>
+            <p>
+                This is the heart of the budget sheet, where you put in all the money you 
+                bring in and all of the money you spend each month. To do this I recommend 
+                using a two table structure, one for cash inflows and one for outflows. 
+                In this example below, you can see each table has four columns:
+                <ul>
+                    <li>Date</li>
+                    <li>Amount</li>
+                    <li>Categoty</li>
+                    <li>Account</li>
+                </ul>
+                <img id="excelFT" src="images/fundtracker1.PNG" alt="First Funds Tracker">
+            </p>
+        </div>
+
+        <div id="Putting Everything Together" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" 
+            class="closeoutTopRight">X</span>
+            <h3>Putting Everything Together</h3>
+            <p>
+                Now we have a perfectly fine layout, but much like a web page with HTML and 
+                no JavaScript, it doesn't really do much. Sure we can fill out the Funds 
+                Tracker for the whole month perfectly, but our Account Summary wouldn’t 
+                be altered and we would have no idea if we kept to our budget. 
+            </p>
+            <p>
+                To make this a working sheet, we need to add formulas to the Account 
+                Summary and Budget sections. On the face of it, you may think that 
+                since the Budget section has 8 categories and the Account Summary has 
+                3 sections that we will need to make 11 formulas. However, thanks to 
+                the power of computers we only need 3!
+            </p>
+            <p>
+                A quick note before we dive in, Google Sheets is cell-based for it’s 
+                formulas so if your sheet does not look exactly like the example then 
+                you may have to adjust your cell identifiers.
+            </p>
+            <h3>Formula for the Account Summary</h3>
+            <p>
+                For the account summary, we need a formula that can tell when we take 
+                money out or add money to an account based on the Funds Tracker to fill 
+                in the EOM column. I have added the below transactions to the Funds tracker.
+            </p>
+            <img id="excelFT" src="images/fundtracker2.PNG" alt="Second Funds Tracker">
+            <p>
+                The main element of our formula will be SUMIF(). To learn the ins and out of 
+                this formula, follow this 
+                <a href="https://support.google.com/docs/answer/3093583?hl=en">LINK,</a>
+                but since this is a budget tutorial, 
+                not a Google Sheets one, you can copy and paste the following into the 
+                EOM-Checking cell:
+                <ul>
+                    <li>=G2+sumif($I$10:$I$1000,F2,$G$10:$G$1000)-sumif($N$10:$N$1000,F2,$L$10:$L$1000)</li>
+                </ul>
+            </p>
+            <p>
+                Then, since the formula uses 
+                <a href="https://edu.gcfglobal.org/en/googlespreadsheets/types-of-cell-references/1/">
+                    ABSOLUTE REFERENCES</a>
+                we can then just drag it down into the two remaining cells. 
+                If all goes well this should be your result!
+            </p>
+            <img id="excelFT" src="images/result1.PNG" alt="Test your Result">
+            <h3>Formula for the Budget</h3>
+            <p>
+                This formula is just a slight modification of the one from before. 
+                All we need to do is remove the first cell reference and then shift from 
+                looking at the account the transaction would affect to looking at the 
+                category. Paste this formula into cell C1:
+                <ul>
+                    <li>=sumif($H$10:$H$1000,A1,$G$10:$G$1000)-sumif($M$10:$M$1000,A1,$L$10:$L$1000)</li>
+                </ul>
+            </p>
+            <p>
+                Then dragging down should give you this result when you also drag 
+                over the remainder formula!
+            </p>
+            <img id="excelB2" src="images/budget2.PNG" alt="Second Budget">
+            <p>
+                The Investment category will be an exception because it is also an account. 
+                Use this formula for cell C12 and then your final result will now be 
+                correct!
+                <ul>
+                    <li>=-sumif($H$10:$H$1000,A12,$G$10:$G$1000)</li>
+                </ul>
+            </p>
+            <span onclick="this.parentElement.style.display='none'" 
+            class="closeoutBottomRight">X</span>
+            <img id="excelB3" src="images/budget3.PNG" alt="Third and Final Budget">
+        </div>
+        <br>
+        <hr>
+
+        <h2>Final Result</h2>
+        <p>
+            Congratulations! You created a completely working budget sheet. 
+            Or you skipped the tabs and clicked 
+            <a href="https://docs.google.com/spreadsheets/d/1nxzEJxTfQwSNxi5lI7ugbT6EaZr9BV6LeuHXAHopY_A/edit?usp=sharing" download>
+                HERE</a> 
+            to download it. 
+            Either way I’m proud of you because you’ve taken the first step 
+            on the road to understanding your personal finances. And now we 
+            get to have some fun with it, let’s start styling!
+        </p>
+        <br>
+        <hr>
+
+        <h2>The Styling Process</h2>
+        <img id="style" src="images/style.png" alt="Paint Pallette">
+        <p>
+            When you consider creative styling and a budget sheet, they may sound 
+            contradictory. However, instead of thinking of creativity like painting, 
+            think of it as optimization. My goal with styling is to make the sheet 
+            streamlined and user friendly so that a novice could understand it. 
+            A document can consist of an untold number of elements, but with creative 
+            styling focused around optimization, it should be very easy to read, 
+            understand, and utilize.
+        </p>
+        <img id="priority" src="images/priorities.jfif" alt="Priorities List">
+        <p>
+            My first step when I’m styling is to identify which elements are the 
+            most important for myself or whoever I am making the sheet for. In our 
+            example we built a sheet with 3 sections and undoubtedly the end client 
+            has a ranking of importance for them. Determining that order of 
+            importance is key to properly direct the creative process.
+
+        </p>
+        <p>
+            From this point a lot of the creation process is up to preference. We 
+            now know the order of importance so we just need to determine how the 
+            end client sees style methods. Maybe highlights are seen as the strongest 
+            identifier, or they could be seen as too distracting. Personally, I like 
+            highlighting cells and the most important thing to me is if change in each 
+            of my accounts is positive or negative each month, so we will use  
+            <a href="https://support.google.com/docs/answer/78413?hl=en&co=GENIE.Platform%3DDesktop">CONDITIONAL FORMATTING</a> to accomplish that. 
+        </p>
+        <br>
+        
+
+        <p>
+            This is where <a href="https://cxl.com/blog/intuitive-web-design-how-to-make-your-website-intuitive-to-use/#:~:text=Intuitive%20design%20means%20that%20when,know%20exactly%20what%20to%20do.&text=Design%20is%20intuitive%20when%20users,intuitive%20design%20focuses%20on%20experience.">INTUITIVE DESIGN</a> 
+            needs to be considered. I could make a positive change be 
+            purple and a negative change be gold but that’s unnecessarily 
+            confusing to a casual observer. Green and red would be much 
+            more widely understood. Even with a personal creation I 
+            recommend using intuitive design and existing conventions 
+            because it is both good practice and even subconsciously it 
+            will help you understand your own creation.
+            <img id="ACR1" src="images/accountsummary2.PNG" alt="Highlighted Account Values">
+        </p>
+        <br>
+        <hr>
+
+        <p>
+            <img id="ACR" src="images/budget4.PNG" alt="Colored Budget Values">
+            My second priority is seeing if I kept within each budget category. 
+            SInce this is of a lower importance, I do not want to use the same style, 
+            highlights, as I did for the Account Summary so instead I will be using 
+            text color. From an artistic perspective we could choose any color once 
+            again, however that would just add another new element for the user to 
+            understand. In my creations I appreciate simplicity and consistency; 
+            since we are doing the same thing here as before, checking if one number 
+            is greater or less than another, I believe we should use the same green 
+            and red color scheme. In this case green would represent that we have 
+            spent less than we budgeted and red would represent that we spent more.
+        </p>
+        <p>
+            This makes our sheet easy to read while increasing its utility. At a 
+            glance anyone can now see our Budget and Account Summary status and since 
+            they both use the same color rule there is little chance of a 
+            communication failure.
+        </p>
+        <hr>
+        <p>
+            Finally we get to the Funds Tracker. Although this is very important 
+            for the budget sheet to function, I don’t really like or see value in looking at 
+            individual transactions so anything that draws the eye wouldn’t be a good idea.  
+            Therfore, I will be leaving that section as is. See the completed form
+            <a href="https://docs.google.com/spreadsheets/d/1Xk6irfnCd1ydp4gHgnEpk_kg-Sp7FrkS7QCNpJ44ET8/edit?usp=sharing">HERE</a>.
+        </p>
+        <br>
+        <hr>
+        
+        <h3>Conclusion</h3>
+        <p>
+            As I stated at the beginning, the goal of my creative process is 
+            ultimately to make a fully functional tool as easy to use and understand 
+            as possible. When designing for someone else I take their preferences and 
+            importance rankings into account instead of my own but that central goal 
+            remains unchanged. 
+        </p>
+        <p>
+            The true artistry, in my opinion, is taking something complicated and 
+            making it usable through easy-to-understand styling and interactive 
+            elements. On this budget sheet we created together, all our end user has 
+            to do is enter their fund transactions in the premade table and they will 
+            then be given full knowledge of their personal finances at any time. For 
+            someone like me who lives for personal finance, having made something with 
+            that much power and potential to help people is truly special.
+
+        </p>
+
+        <script>
+            document.getElementById("defaultTab").click();
+        </script>
+
+
+    </main>
+
+    <footer>
+        <p>
+            For any questions, please contact me at my
+            <a href="mailto:blairhbristow@gmail.com">email!</a>
+        </p>
+        <p>
+            <small>Created by: Blair Bristow</small>
+        </p>
+    </footer>
+    
+</body>
+</html>
