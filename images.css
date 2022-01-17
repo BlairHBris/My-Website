@@ -35,6 +35,28 @@
     margin-top: 1em;
 }
 
+#ACR2{
+    border: 2px solid black;
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#ACR3{
+    border: 2px solid black;
+    width: 20em;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 #mainimage{
     width:35em;
     display: block;
