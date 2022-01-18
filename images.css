@@ -12,8 +12,7 @@
 
 #ACR{
     border: 2px solid black;
-    width: 15em;
-    height: 25em;
+    height: 12em;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -80,7 +79,7 @@
 
 #excel{
     border: 2px solid black;
-    width: 25em;
+    width: 18em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -88,7 +87,7 @@
 
 #excelbudget{
     border: 2px solid black;
-    width: 15em;
+    width: 12em;
     margin-left: 2em;
     float: right;
     margin-right: 1em;
@@ -96,7 +95,8 @@
 
 #excelFT{
     border: 2px solid black;
-    width: 25em;
+    width: 20em;
+    height: 3em;
     margin-left: auto;
     margin-right: auto;
     display: block;
