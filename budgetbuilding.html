@@ -187,6 +187,17 @@
                 in the EOM column. I have added the below transactions to the Funds tracker.
             </p>
             <img id="excelFT" src="images/fundtracker2.PNG" alt="Second Funds Tracker">
+            <p>
+                The main element of our formula will be SUMIF(). To learn the ins and out of 
+                this formula, follow this 
+                <a href="https://support.google.com/docs/answer/3093583?hl=en">LINK,</a>
+                but since this is a budget tutorial, 
+                not a Google Sheets one, you can copy and paste the following into the 
+                EOM-Checking cell:
+                <ul>
+                    <li>=G2+sumif($I$10:$I$1000,F2,$G$10:$G$1000)-sumif($N$10:$N$1000,F2,$L$10:$L$1000)</li>
+                </ul>
+            </p>
         </div>
         <br>
         <hr>
