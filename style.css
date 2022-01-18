@@ -14,23 +14,22 @@ header{
     max-width: 51em;
 }
 
-nav>ul{
-    list-style-type: none;
-    display: inline;
-    max-width: 51em;
+table{
+    table-layout: fixed;
+    width: 51em;
 }
 
-nav>ul>li{
-    display: inline;
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 51em;
-}
-
-nav>ul>li>a{
-    color: black;
+th>a{
     text-decoration: none;
+    color: black;
     font-weight: bold;
+    background-color: lightgray;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+th>a:hover{
+    background-color: rgb(202, 183, 76);
 }
 
 h1{
