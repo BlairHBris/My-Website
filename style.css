@@ -16,7 +16,7 @@ header{
 
 table{
     table-layout: fixed;
-    width: 51em;
+    width: 100%;
 }
 
 th>a{
@@ -24,8 +24,6 @@ th>a{
     color: black;
     font-weight: bold;
     background-color: lightgray;
-    padding-right: 2em;
-    padding-left: 2em;
 }
 
 th>a:hover{
