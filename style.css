@@ -50,8 +50,9 @@ h3{
 }
 
 p,
-ol,
-ul{
+ol
+ul,
+li{
     max-width: 51em;
     font-size: 16px;
     line-height: 1.75;
