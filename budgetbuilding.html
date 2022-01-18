@@ -212,9 +212,9 @@
                 All we need to do is remove the first cell reference and then shift from 
                 looking at the account the transaction would affect to looking at the 
                 category. Paste this formula into cell C1:
-                <ul>
-                    <li>=sumif($H$10:$H$1000,A1,$G$10:$G$1000)-sumif($M$10:$M$1000,A1,$L$10:$L$1000)</li>
-                </ul>
+                <br>
+                <br>
+                =sumif($H$10:$H$1000,A1,$G$10:$G$1000)-sumif($M$10:$M$1000,A1,$L$10:$L$1000)
             </p>
             <p>
                 Then dragging down should give you this result when you also drag 
@@ -225,6 +225,7 @@
                 The Investment category will be an exception because it is also an account. 
                 Use this formula for cell C12 and then your final result will now be 
                 correct!
+                <br>
                 <br>
                 =-sumif($H$10:$H$1000,A12,$G$10:$G$1000)
                 <span onclick="this.parentElement.style.display='none'" 
