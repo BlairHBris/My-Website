@@ -75,22 +75,22 @@
         <hr>
 
         <h3>The Creation Process</h3>
-        <div class="tab">
+        <div class="tab" id="tabGroup1">
             <button class="tablinks" 
-            onclick="openSection(event, 'Account Summary')"
-            id="defaultTab">
+            onclick="openSection(event)"
+            id="defaultTab1">
                 Account Summary
             </button>
             <button class="tablinks" 
-            onclick="openSection(event,'Budget')">
+            onclick="openSection(event)">
                 Budget
             </button>
             <button class="tablinks" 
-            onclick="openSection(event,'Funds Tracker')">
+            onclick="openSection(event)">
                 Funds Tracker
             </button>
             <button class="tablinks" 
-            onclick="openSection(event,'Putting Everything Together')">
+            onclick="openSection(event)">
                 Putting Everything Together
             </button>
 	    </div>
@@ -268,21 +268,22 @@
 
         <h3>Styling Steps</h3>
         <h4>Click on the tabs to learn more!</h4>
-        <div class="tab">
+        <div class="tab" id="tabGroup2">
             <button class="tablinks" 
-            onclick="openSection(event, 'Define Priorities')">
+            onclick="openSection(event)"
+            id="defaultTab2">
                 Define Priorities
             </button>
             <button class="tablinks" 
-            onclick="openSection(event,'Showing Primary')">
+            onclick="openSection(event)">
                 Showing Primary
             </button>
             <button class="tablinks" 
-            onclick="openSection(event,'Make it Intuitive')">
+            onclick="openSection(event)">
                 Make it Intuitive
             </button>
             <button class="tablinks" 
-            onclick="openSection(event,'Showing Secondary')">
+            onclick="openSection(event)">
                 Showing Secondary
             </button>
 	    </div>
@@ -394,7 +395,8 @@
         </p>
 
         <script>
-            document.getElementById("defaultTab").click();
+            document.getElementById("defaultTab1").click();
+            document.getElementById("defaultTab2").click();
         </script>
 
     </main>
