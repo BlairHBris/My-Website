@@ -1,154 +1,112 @@
-#selfpicture{
-    float: right;
-    height: 15em;
-    margin: 1em 2em 2em 2em;
+#selfpicture,
+#ACR,
+#ACR1,
+#ACR2,
+#ACR3,
+#mainimage,
+#spreadsheet,
+#excel,
+#excelbudget,
+#excelFT,
+#excelB2,
+#excelB3,
+#priority,
+#hrev1,
+#hrev2 {
     border: 2px solid black;
 }
 
-#ravens-logo{
+#selfpicture,
+#ACR,
+#dollarsign,
+#excelbudget,
+#hrev2,
+#style {
+    float: right;
+}
+
+#ravens-logo,
+#spreadsheet,
+#priority {
     float: left;
-    height: 10em;
 }
 
-#ACR{
-    border: 2px solid black;
-    height: 12em;
+#ACR,
+#ACR1,
+#ACR2,
+#ACR3,
+#mainimage,
+#excel,
+#excelFT,
+#excelB2,
+#excelB3 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    float: right;
 }
 
-#ACR1{
-    border: 2px solid black;
-    height: 10em;
-    width: 15em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 1em;
-    margin-top: 1em;
+#selfpicture{
+    height: 15em;
+    margin: 1em 2em 2em 2em;    
 }
 
-#ACR2{
-    border: 2px solid black;
-    width: 15em;
-    height: 10em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 1em;
-    margin-top: 1em;
+#ravens-logo{    
+    height: 6em;
 }
 
-#ACR3{
-    border: 2px solid black;
+#ACR,
+#ACR1,
+#ACR2,
+#ACR3 {
     width: 20em;
-    height: 10em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     margin-bottom: 1em;
     margin-top: 1em;
 }
 
 #mainimage{
     width:20em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
     margin-bottom: 4em;
 }
 
-#dollarsign{
-    float: right;
+#dollarsign{    
     width: 10em;
-    height: 10em;
-    
 }
 
 #spreadsheet{
-    float: left;
     margin-right: 1em;
     height: 8em;
-    border: 2px solid black;
 }
 
 #excel{
-    border: 2px solid black;
     width: 18em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #excelbudget{
-    border: 2px solid black;
     width: 12em;
     margin-left: 2em;
-    float: right;
     margin-right: 1em;
 }
 
 #excelFT{
-    border: 2px solid black;
     width: 20em;
-    height: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
-
-#excelB2{
-    border: 2px solid black;
+#excelB2,
+#excelB3 {
     width: 15em;
-    height: 20em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-#excelB3{
-    border: 2px solid black;
-    width: 15em;
-    height: 20em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     margin-bottom: 1em;
 }
 
-#style{
-    float: right;
-    width: 12em;
-    height: 10em;
+#style,
+#priority {
+    width: 10em;
     margin: 1em 2em 1em 2em;
 }
 
-#priority{
-    float: left;
-    width: 12em;
-    height: 10em;
-    margin: 1em 2em 1em 2em;
-    border: 2px solid black;
-}
-
-#hrev1{
-    border: 2px solid black;
+#hrev1,
+#hrev2 {
     width: 20em;
-    height: 10em;
+    height:10em;
     margin-bottom: 1em;
     margin-top: 1em;
-}
-#hrev2{
-    border: 2px solid black;
-    width: 20em;
-    height: 10em;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    float: right;
 }
