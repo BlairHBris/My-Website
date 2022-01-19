@@ -38,24 +38,22 @@
     border: 1px solid gray;
 }
 
-.closeoutTopRight{
+.closeoutTopRight,
+.closeoutBottomRight{
     float: right;
     cursor: pointer;
+}
+.closeoutTopRight{
     padding-top: 1em;
     padding-right: 1em;
 }
 
-.closeoutTopRight:hover{
+.closeoutTopRight:hover,
+.closeoutBottomRight:hover{
     color: red;
 }
 
 .closeoutBottomRight{
-    float: right;
-    cursor: pointer;
-    padding-top: 18em;
+    padding-top: 12em;
     padding-right: 1em;
-}
-
-.closeoutBottomRight:hover{
-    color: red;
 }
