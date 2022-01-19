@@ -47,7 +47,8 @@
 
 #selfpicture{
     height: 15em;
-    margin: 1em 2em 2em 2em;    
+    width:10em;
+    margin-left: 2em;  
 }
 
 #ravens-logo{    
