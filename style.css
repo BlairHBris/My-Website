@@ -86,4 +86,9 @@ figure{
     margin-right: 1em;
     text-align: center;
     float: left;
+    width: 16em;
+}
+
+audio{
+    width: 16em;
 }
