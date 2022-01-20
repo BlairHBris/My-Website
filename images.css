@@ -125,3 +125,19 @@
     margin-bottom: 1em;
     margin-top: 1em;
 }
+
+#hrev1,
+#ACR4{
+    margin-left: 1em;
+}
+
+#hrev2,
+#ACR5{
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 600px){
+    #imagepar{
+        display: inline-block;
+    }
+}
