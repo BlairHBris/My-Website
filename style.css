@@ -29,6 +29,7 @@ div{
 table{
     table-layout: fixed;
     width: 100%;
+    background-color: lightgray;
 }
 
 th>a{
@@ -36,6 +37,10 @@ th>a{
     color: black;
     font-weight: bold;
     background-color: lightgray;
+}
+
+th:hover{
+    background-color: rgb(202, 183, 76);
 }
 
 th>a:hover{
