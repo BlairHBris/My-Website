@@ -12,7 +12,9 @@
 #excelB3,
 #priority,
 #hrev1,
-#hrev2 {
+#hrev2,
+#ACR4,
+#ACR5 {
     border: 2px solid black;
 }
 
@@ -21,7 +23,8 @@
 #dollarsign,
 #excelbudget,
 #hrev2,
-#style {
+#style,
+#ACR5 {
     float: right;
 }
 
@@ -62,6 +65,14 @@
 #ACR2,
 #ACR3 {
     width: 20em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#ACR4,
+#ACR5{
+    width: 22em;
+    height: 30em;
     margin-bottom: 1em;
     margin-top: 1em;
 }
