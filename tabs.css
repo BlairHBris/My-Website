@@ -17,16 +17,17 @@
     cursor: pointer;
     padding: .5em .5em;
     transition: .2s;
+    width: 25%;
+    height: fit-content;
 }
 
 
 .tab button.active{
-    background-color: rgb(185, 108, 185)
+    background-color: rgb(185, 108, 185);
 }
 
 .tab button:hover{
-    background-color: rgb(202, 183, 76)
-    ;
+    background-color: rgb(202, 183, 76);
 }
 
 .tabcontent{
