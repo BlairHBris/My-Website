@@ -21,6 +21,9 @@
     height: fit-content;
 }
 
+#tabGroup2 button{
+    width: 20%;
+}
 
 .tab button.active{
     background-color: rgb(185, 108, 185);
